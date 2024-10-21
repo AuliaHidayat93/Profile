@@ -4,136 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Ade - Head of IT</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Aulia Hidayat - IT Head</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <style>
         body {
             font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
         }
-        .hero {
-            background: #007bff;
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://source.unsplash.com/1600x900/?technology,IT') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: white;
-            padding: 100px 0;
-            text-align: center;
         }
-        .hero img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
+
+        .hero-section h1 {
+            font-size: 4rem;
+            font-weight: bold;
         }
-        .skills .progress-bar {
-            background-color: #007bff;
+
+        .about-section, .skills-section, .contact-section {
+            padding: 4rem 0;
         }
-        footer {
-            background-color: #333;
+
+        .footer {
+            background-color: #343a40;
             color: white;
-            padding: 20px 0;
+            padding: 2rem 0;
             text-align: center;
         }
     </style>
 </head>
 <body>
-    <!-- Home Section -->
-    <section class="hero">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <img src="profile.jpg" alt="Ade - Head of IT">
-            <h1>Ade</h1>
-            <h3>Head of IT</h3>
-            <p>Experienced IT leader specializing in system infrastructure, ERP SAP B1, and networking solutions.</p>
+            <a class="navbar-brand" href="#">Aulia Hidayat</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="text-center">
+            <h1>Hello, I'm Aulia Hidayat</h1>
+            <p class="lead">Head of IT | IT Strategist | Network & Security Specialist</p>
+            <a href="#about" class="btn btn-primary mt-3">Learn More</a>
         </div>
     </section>
 
-    <!-- About Me Section -->
-    <section class="about mt-5">
+    <!-- About Section -->
+    <section id="about" class="about-section">
         <div class="container">
-            <h2>About Me</h2>
-            <p>With over 10 years of experience, I have successfully led multiple IT departments, overseeing network security, system upgrades, and ERP implementations. My strengths lie in managing complex IT environments, troubleshooting issues swiftly, and ensuring business continuity through reliable IT solutions.</p>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills mt-5">
-        <div class="container">
-            <h2>Skills</h2>
             <div class="row">
-                <div class="col-md-6">
-                    <h4>Networking & Security</h4>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 90%">90%</div>
-                    </div>
+                <div class="col-lg-6">
+                    <h2>About Me</h2>
+                    <p>I am an experienced IT professional with over 10 years of experience in leading IT teams and managing technology infrastructure in high-paced environments. I specialize in IT strategy, network security, and system architecture.</p>
                 </div>
-                <div class="col-md-6">
-                    <h4>ERP SAP B1</h4>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 85%">85%</div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h4>Server Management</h4>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 80%">80%</div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h4>SQL & VB.NET</h4>
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 75%">75%</div>
-                    </div>
+                <div class="col-lg-6">
+                    <img src="https://source.unsplash.com/800x600/?computer,IT" class="img-fluid" alt="Profile Picture">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio mt-5">
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section bg-light">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="row">
+            <h2 class="text-center">My Skills</h2>
+            <div class="row text-center mt-4">
                 <div class="col-md-4">
-                    <h5>ERP Implementation</h5>
-                    <p>Led the successful implementation of SAP B1 for a large-scale company.</p>
+                    <h4>Network & Security</h4>
+                    <p>Expert in network design, firewall configuration, and security protocols to protect data and infrastructure.</p>
                 </div>
                 <div class="col-md-4">
-                    <h5>Network Infrastructure</h5>
-                    <p>Designed and deployed a robust network infrastructure for a multi-site organization.</p>
+                    <h4>System Architecture</h4>
+                    <p>Proven track record of designing scalable and reliable system architectures for large enterprises.</p>
                 </div>
                 <div class="col-md-4">
-                    <h5>Security Enhancements</h5>
-                    <p>Developed and implemented new security policies, minimizing security breaches by 50%.</p>
+                    <h4>Team Leadership</h4>
+                    <p>Experienced in leading cross-functional IT teams to achieve operational excellence and innovation.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact mt-5">
+    <section id="contact" class="contact-section">
         <div class="container">
-            <h2>Contact Me</h2>
-            <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" required>
+            <h2 class="text-center">Get in Touch</h2>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" class="form-control" id="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+            </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="mt-5">
-        <p>© 2024 Ade - Head of IT</p>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Aulia Hidayat | IT Head</p>
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
